@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Utilisateurs et Publications</title>
+    <link rel="stylesheet" href="user.css" />
+    <script src="user.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Utilisateurs</h1>
+        <div id="user-list" class="user-list"></div>
+
+        <div id="loader" class="loader" style="display: none;">
+            <div class="dots-spinner">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p>Téléchargement...</p>
+        </div>
+
+        <table id="post-table" class="post-table" style="display: none;">
+            <thead>
+                <tr>
+                    <th>userId</th>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>body</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</body>
+</html>

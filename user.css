@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.user-list button {
+    padding: 10px 15px;
+    border: 2px solid black;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.3s;
+    box-shadow: 4px 4px 0 black;
+}
+
+.user-list button:hover {
+    background: blue;
+    color: white;
+}
+
+.user-list .active {
+    background: #0056b3;
+    color: white;
+}
+
+.loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dots-spinner {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    animation: spin 1.5s linear infinite;
+}
+
+.dots-spinner span {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.dots-spinner span:nth-child(1) {
+    top: 0;
+    left: 24px;
+}
+.dots-spinner span:nth-child(2) {
+    top: 12px;
+    left: 48px;
+}
+.dots-spinner span:nth-child(3) {
+    top: 36px;
+    left: 48px;
+}
+.dots-spinner span:nth-child(4) {
+    top: 48px;
+    left: 24px;
+}
+.dots-spinner span:nth-child(5) {
+    top: 36px;
+    left: 0;
+}
+.dots-spinner span:nth-child(6) {
+    top: 12px;
+    left: 0;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.post-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.post-table th, .post-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.post-table th {
+    background: none;
+    color: black;
+}
